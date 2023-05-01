@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/step_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/user_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/step_information"
+        android:layout_width="385dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <TextView
+            android:id="@+id/number_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="99999"
+            android:textSize="110sp" />
+
+        <TextView
+            android:id="@+id/target_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Цель: 999"
+            android:textSize="30sp" />
+
+        <View
+            android:id="@+id/activity_scale"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:background="@drawable/line_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="348dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_information">
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="999,99 км"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9999 кал"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="99ч 99мин"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="351dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="81dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <View
+            android:id="@+id/activity_pn"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+        <View
+            android:id="@+id/activity_vt"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+        <View
+            android:id="@+id/activity_sr"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+        <View
+            android:id="@+id/activity_cht"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+        <View
+            android:id="@+id/activity_pt"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+        <View
+            android:id="@+id/activity_sb"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+        <View
+            android:id="@+id/activity_vs"
+            android:layout_width="37dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0.4"
+            android:background="@drawable/rectangle_9" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
